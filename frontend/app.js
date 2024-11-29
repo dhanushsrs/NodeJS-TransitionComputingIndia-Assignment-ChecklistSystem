@@ -1,6 +1,6 @@
 async function fetchEvaluationResults() {
   try {
-    const url = "http://localhost:8000/api/checklist";
+    const url = "https://checklistsystem-backend.onrender.com";
     const response = await axios.get(url);
 
     const results = response.data.results;
