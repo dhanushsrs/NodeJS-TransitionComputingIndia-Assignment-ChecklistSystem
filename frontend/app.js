@@ -1,6 +1,7 @@
 async function fetchEvaluationResults() {
   try {
-    const response = await axios.get("http://localhost:8000/api/checklist");
+    const url = "http://localhost:8000/api/checklist";
+    const response = await axios.get(url);
 
     const results = response.data.results;
 
