@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Valuation Fee Paid",
+    "field": "isValuationFeePaid",
+    "expectedValue": true,
+    "operator": "equals",
+    "description": "Fee required for valuation."
+  },
+  {
+    "name": "UK Resident",
+    "field": "isUkResident",
+    "expectedValue": true,
+    "operator": "equals",
+    "description": "Applicant must be UK resident."
+  },
+  {
+    "name": "Risk Rating Medium",
+    "field": "riskRating",
+    "expectedValue": "Medium",
+    "operator": "equals",
+    "description": "Applicant's risk rating medium."
+  },
+  {
+    "name": "LTV Below 60%",
+    "fields": ["loanRequired", "purchasePrice"],
+    "expectedValue": 60,
+    "operator": "ltvBelow",
+    "description": "Loan-to-Value should be less than 60%"
+  }
+]

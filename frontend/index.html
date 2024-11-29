@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checklist Evaluation Dashboard</title>
+    <!-- Include Axios via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checklist Evaluation Dashboard</h1>
+
+      <!-- Loading message -->
+      <div class="loading" id="loading-message">
+        Loading evaluation results...
+      </div>
+
+      <!-- Table to display the checklist results -->
+      <table id="evaluation-table">
+        <thead>
+          <tr>
+            <th>Condition</th>
+            <th>Status</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Table rows will be dynamically inserted here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
